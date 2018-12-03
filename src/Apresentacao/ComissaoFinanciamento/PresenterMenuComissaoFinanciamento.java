@@ -2,7 +2,7 @@ package Apresentacao.ComissaoFinanciamento;
 
 public class PresenterMenuComissaoFinanciamento {
 
-	public void MostrarMenu() {
+	public void escolherOpcao() {
 		// TODO Auto-generated method stub
 		
 	}

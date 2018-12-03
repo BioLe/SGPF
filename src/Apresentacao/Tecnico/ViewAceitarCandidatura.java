@@ -40,6 +40,7 @@ public class ViewAceitarCandidatura extends View {
 
 	public void obterCandidatura() {
 		//TODO Perguntar eng. Como é que escolhemos o número de projeto? E se data assim faz sentido.
+		System.out.println("HWLL");
 		try {
 			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 			String dataAux = formatter.format(new Date());
