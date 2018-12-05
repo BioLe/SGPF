@@ -1,4 +1,4 @@
-package GestaoEstadoProjeto;
+package Apresentacao.GestaoEstadoProjeto;
 
 public class PresenterSelecionarProjeto {
 	private ViewSelecionarProjeto viewSelecionarProjeto;

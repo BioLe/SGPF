@@ -14,7 +14,7 @@ public class ViewAutenticacao extends View {
 		escolherCargo();	
 	}
 	
-	public void escolherCargo() {
+	public String escolherCargo() {
 		
 		switch(ler()) {
 			case "1":
@@ -29,6 +29,7 @@ public class ViewAutenticacao extends View {
 				cargo = "Comissão de Financiamento";
 				break;
 		}
+		return "TODO";
 	}
 
 	public String getNome() {

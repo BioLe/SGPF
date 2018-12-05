@@ -7,6 +7,8 @@ import Apresentacao.Tecnico.PresenterMenuTecnico;
 
 public class PresenterAutenticacao {
 	
+	private boolean toFinish;
+	
 	//Views
 	private ViewAutenticacao viewAutenticacao;
 	private ViewCabecalho viewCabecalho;
@@ -17,6 +19,8 @@ public class PresenterAutenticacao {
 	private PresenterMenuComissaoFinanciamento presenterMenuComissaoFinanciamento;
 	
 	public PresenterAutenticacao() {
+		
+		this.toFinish = false;
 
 		//Views
 		this.viewAutenticacao = new ViewAutenticacao();
@@ -29,14 +33,16 @@ public class PresenterAutenticacao {
 		
 		viewAutenticacao = new ViewAutenticacao();	
 		obterAutenticacao();
-		mostrarMenu(viewAutenticacao.getCargo());
 		
 	}
 
 	public void obterAutenticacao() {
-		viewAutenticacao.obterAutenticacao();
-		viewCabecalho.setCargo(viewAutenticacao.getCargo());
-		viewCabecalho.setNome(viewAutenticacao.getNome());
+		//while(!toFinish) {
+			viewAutenticacao.obterAutenticacao();
+			viewCabecalho.setCargo(viewAutenticacao.getCargo());
+			viewCabecalho.setNome(viewAutenticacao.getNome());
+			mostrarMenu(viewAutenticacao.getCargo());
+		//}
 	}
 	
 	public void mostrarMenu(String cargo) {
@@ -55,7 +61,10 @@ public class PresenterAutenticacao {
 				viewCabecalho.apresentar();
 				presenterMenuComissaoFinanciamento.escolherOpcao();
 				break;
+				
+			/*default:
+				toFinish = true;
+				viewAutenticacao.escrever("Bye human.");*/
 		}
 	}
-
 }

@@ -38,7 +38,7 @@ public class ViewAceitarCandidatura extends View {
 	private String telefoneResponsavelContactos;
 	private String emailResponsavelContactos;
 
-	public void obterCandidatura() {
+	public String obterCandidatura() {
 		//TODO Perguntar eng. Como é que escolhemos o número de projeto? E se data assim faz sentido.
 		System.out.println("HWLL");
 		try {
@@ -80,6 +80,7 @@ public class ViewAceitarCandidatura extends View {
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		String dataAux = formatter.format(getData());
 		//escrever(getData());
+		return "TODO";
 		
 	}
 	

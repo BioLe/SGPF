@@ -2,7 +2,7 @@ package Apresentacao.Tecnico;
 
 import Apresentacao.Autenticacao.PresenterAutenticacao;
 import Apresentacao.Autenticacao.ViewAutenticacao;
-import GestaoEstadoProjeto.PresenterSelecionarProjeto;
+import Apresentacao.GestaoEstadoProjeto.PresenterSelecionarProjeto;
 
 public class PresenterMenuTecnico {
 	
@@ -55,13 +55,13 @@ public class PresenterMenuTecnico {
 				case "7": //Mudar de Utilizador
 					//TODO - BIG RECURSIVE PROBLEM
 					//presenterAutenticacao.obterAutenticacao();
+					toFinish = true;
 					break;
 				case "8": //Forçar Fecho do Projeto
 					presenterSelecionarProjeto.selecionarProjeto();
 					break;
 				case "9": //Terminar
 					toFinish = true;
-					viewMenuTecnico.escrever("Bye");
 					break;
 				
 			}

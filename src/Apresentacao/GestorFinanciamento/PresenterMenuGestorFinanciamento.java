@@ -1,7 +1,7 @@
 package Apresentacao.GestorFinanciamento;
 
 import Apresentacao.Autenticacao.PresenterAutenticacao;
-import GestaoEstadoProjeto.PresenterSelecionarProjeto;
+import Apresentacao.GestaoEstadoProjeto.PresenterSelecionarProjeto;
 
 public class PresenterMenuGestorFinanciamento {
 		
@@ -13,7 +13,7 @@ public class PresenterMenuGestorFinanciamento {
 	//Presenters
 	private PresenterAutenticacao presenterAutenticacao;
 	private PresenterPedirReforco presenterPedirReforco;
-	private PresenterRealizarPagamento presenterRealizarPagamento;
+	private PresenterEfetuarPagamento presenterEfeuarPagamento;
 	private PresenterVerRelatorioProjeto presenterVerRelatorioProjeto;
 	private PresenterVerRelatorioPagamentos presenterVerRelatorioPagamentos;
 	private PresenterSelecionarProjeto presenterSelecionarProjeto;
@@ -29,7 +29,7 @@ public class PresenterMenuGestorFinanciamento {
 		//presenterAutenticacao = new PresenterAutenticacao();
 		presenterSelecionarProjeto = new PresenterSelecionarProjeto();
 		presenterPedirReforco = new PresenterPedirReforco();
-		presenterRealizarPagamento = new PresenterRealizarPagamento();
+		presenterEfeuarPagamento = new PresenterEfetuarPagamento();
 		presenterVerRelatorioPagamentos = new PresenterVerRelatorioPagamentos();
 		presenterVerRelatorioProjeto = new PresenterVerRelatorioProjeto();
 	}
@@ -44,7 +44,7 @@ public class PresenterMenuGestorFinanciamento {
 					presenterPedirReforco.pedirReforco();
 					break;
 				case "2": //Realizar Pagamento
-					presenterRealizarPagamento.selecionarProjeto();
+					presenterEfeuarPagamento.efetuarPagamento();
 					break;
 				case "3": //Ver Relatorio Projeto
 					//presenterVerRelatorioProjeto.selecionarProjeto();
