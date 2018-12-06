@@ -12,5 +12,4 @@ public class PresenterEfetuarPagamento {
 	public void efetuarPagamento() {
 		viewEfetuarPagamento.efetuarPagamento();	
 	}
-
 }
