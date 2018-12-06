@@ -12,14 +12,14 @@ public class PresenterMenuTecnico {
 	private ViewMenuTecnico viewMenuTecnico;
 
 	//Presenters
-	//private PresenterAutenticacao presenterAutenticacao;
+	private PresenterAutenticacao presenterAutenticacao;
 	private PresenterAceitarCandidatura presenterAceitarCandidatura;
 	private PresenterSelecionarProjeto presenterSelecionarProjeto;
 	private PresenterEmitirParecerTecnico presenterEmitirParecerTecnico;
 	
-	public PresenterMenuTecnico(){
-		
-		this.toFinish = false;
+	public PresenterMenuTecnico(PresenterAutenticacao presenterAutenticacao){
+		this.presenterAutenticacao = presenterAutenticacao;
+		toFinish = false;
 		
 		//Views
 		viewMenuTecnico = new ViewMenuTecnico();
@@ -59,14 +59,16 @@ public class PresenterMenuTecnico {
 					break;
 				case "8": //Mudar de Utilizador
 					//TODO - BIG RECURSIVE PROBLEM
-					//presenterAutenticacao.obterAutenticacao();
 					toFinish = true;
+					presenterAutenticacao.obterAutenticacao();
 					break;
 				case "9": //Forçar Fecho do Projeto
 					presenterSelecionarProjeto.selecionarProjeto();
 					break;
 				case "10": //Terminar
 					toFinish = true;
+					System.out.println("Bye human.");
+					System.exit(0);
 					break;
 			}
 		}

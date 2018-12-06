@@ -27,9 +27,9 @@ public class PresenterAutenticacao {
 		viewCabecalho = new ViewCabecalho();
 		
 		//Presenters sucessores
-		presenterMenuTecnico = new PresenterMenuTecnico();
-		presenterMenuGestorFinanciamento = new PresenterMenuGestorFinanciamento();
-		presenterMenuComissaoFinanciamento = new PresenterMenuComissaoFinanciamento();
+		presenterMenuTecnico = new PresenterMenuTecnico(this);
+		presenterMenuGestorFinanciamento = new PresenterMenuGestorFinanciamento(this);
+		presenterMenuComissaoFinanciamento = new PresenterMenuComissaoFinanciamento(this);
 		
 		viewAutenticacao = new ViewAutenticacao();	
 		obterAutenticacao();
@@ -38,7 +38,9 @@ public class PresenterAutenticacao {
 
 	public void obterAutenticacao() {
 		//while(!toFinish) {
+		System.out.println("ObterAuth");
 			viewAutenticacao.obterAutenticacao();
+		System.out.println("ObtiAuth");
 			viewCabecalho.setCargo(viewAutenticacao.getCargo());
 			viewCabecalho.setNome(viewAutenticacao.getNome());
 			mostrarMenu(viewAutenticacao.getCargo());

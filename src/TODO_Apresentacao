@@ -1,0 +1,33 @@
+Apresentação:
+	> Gestor de financiamento
+x		>escrever("1 - Pedir Reforço");
+x		>escrever("2 - Efetuar Pagamento");
+		>escrever("3 - Ver Relatório de Projeto");
+		>escrever("4 - Ver Relatorio de Pagamentos");
+x		>escrever("5 - Suspender Projeto");
+x		>escrever("6 - Reativar Projeto");
+x		>escrever("7 - Mudar de Utilizador");
+		>escrever("8 - Forçar Fecho de Projeto");
+x		>escrever("9 - Terminar");
+	> Técnico
+x		escrever("1 - Aceitar Candidatura");
+x		escrever("2 - Abrir Projeto");
+x		escrever("3 - Arquivar Projeto");
+x		escrever("4 - Reenquadrar Projeto");
+x		escrever("5 - Suspender Projeto");
+x		escrever("6 - Reativar Projeto");
+x		escrever("7 - Mudar de Utilizador");
+		escrever("8 - Forçar Fecho do Projeto");
+x		escrever("9 - Terminar");
+	> Comissão de financiamento
+x		escrever("1 - Emitir Despacho Abertura");
+x		escrever("2 - Emitir Despacho Financiamento");
+x		escrever("3 - Emitir Despacho Reforço");
+		escrever("4 - Ver Relatório de Projeto");
+		escrever("5 - Ver Relatório de Pagamentos");
+x		escrever("6 - Suspender Projeto");
+x		escrever("7 - Reativar Projeto");
+x		escrever("8 - Mudar de Utilizador");
+		escrever("9 - Forçar Fecho de Projeto");
+x		escrever("10 - Terminar");
+		

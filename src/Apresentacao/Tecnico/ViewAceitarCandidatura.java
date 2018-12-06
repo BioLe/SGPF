@@ -40,7 +40,7 @@ public class ViewAceitarCandidatura extends View {
 
 	public String obterCandidatura() {
 		//TODO Perguntar eng. Como é que escolhemos o número de projeto? E se data assim faz sentido.
-		System.out.println("HWLL");
+		
 		try {
 			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 			String dataAux = formatter.format(new Date());
@@ -76,7 +76,7 @@ public class ViewAceitarCandidatura extends View {
 		escrever("Email:");
 		emailResponsavelContactos = ler();
 		
-		escrever("---------------------DEBUGGER---------------");
+		
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
 		String dataAux = formatter.format(getData());
 		//escrever(getData());
@@ -101,7 +101,7 @@ public class ViewAceitarCandidatura extends View {
 		//taxaBonificao = Float.parseFloat(ler());
 		//escrever("Montante máximo: ");
 		//montanteMaximo = Float.parseFloat(ler());
-		escrever("Período máximo: ");
+		escrever("Período máximo (yyyy-MM-dd): ");
 		try {
 			periodoMaximo = new SimpleDateFormat("yyyy-MM-dd").parse(ler());
 		} catch (ParseException e) {

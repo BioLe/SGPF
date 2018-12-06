@@ -18,8 +18,8 @@ public class PresenterMenuGestorFinanciamento {
 	private PresenterVerRelatorioPagamentos presenterVerRelatorioPagamentos;
 	private PresenterSelecionarProjeto presenterSelecionarProjeto;
 	
-	public PresenterMenuGestorFinanciamento() {
-		
+	public PresenterMenuGestorFinanciamento(PresenterAutenticacao presenterAutenticacao) {
+		this.presenterAutenticacao = presenterAutenticacao;
 		this.toFinish = false;
 		
 		//Views
@@ -60,14 +60,16 @@ public class PresenterMenuGestorFinanciamento {
 					break;
 				case "7": //Mudar de Utilizador
 					//TODO - BIG RECURSIVE PROBLEM
-					//presenterAutenticacao.obterAutenticacao();
+					toFinish = true;
+					presenterAutenticacao.obterAutenticacao();
 					break;
 				case "8": //Forçar Fecho do Projeto
 					presenterSelecionarProjeto.selecionarProjeto();
 					break;
 				case "9": //Terminar
 					toFinish = true;
-					viewMenuGestorFinanciamento.escrever("Bye human.");
+					System.out.println("Bye human.");
+					System.exit(0);
 					break;
 				
 			}

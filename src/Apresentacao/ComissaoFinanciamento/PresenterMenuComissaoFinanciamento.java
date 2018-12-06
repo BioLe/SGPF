@@ -16,6 +16,7 @@ private boolean toFinish;
 	private ViewMenuComissaoFinanciamento viewMenuComissaoFinanciamento;
 
 	//Presenters
+	private PresenterAutenticacao presenterAutenticacao;
 	private PresenterEmitirDespachoAbertura presenterEmitirDespachoAbertura;
 	private PresenterEmitirDespachoFinanciamento presenterEmitirDespachoFinanciamento;
 	private PresenterEmitirDespachoReforco presenterEmitirDespachoReforco;
@@ -23,8 +24,8 @@ private boolean toFinish;
 	private PresenterVerRelatorioPagamentos presenterVerRelatorioPagamentos;
 	private PresenterSelecionarProjeto presenterSelecionarProjeto;
 	
-	public PresenterMenuComissaoFinanciamento() {
-		
+	public PresenterMenuComissaoFinanciamento(PresenterAutenticacao presenterAutenticacao) {
+		this.presenterAutenticacao = presenterAutenticacao;
 		this.toFinish = false;
 		
 		//Views
@@ -69,14 +70,16 @@ private boolean toFinish;
 					break;
 				case "8": //Mudar de Utilizador
 					//TODO - BIG RECURSIVE PROBLEM
-					//presenterAutenticacao.obterAutenticacao();
+					toFinish = true;
+					presenterAutenticacao.obterAutenticacao();
 					break;
 				case "9": //Forçar Fecho do Projeto
 					presenterSelecionarProjeto.selecionarProjeto();
 					break;
 				case "10": //Terminar
 					toFinish = true;
-					viewMenuComissaoFinanciamento.escrever("Bye human.");
+					System.out.println("Bye human.");
+					System.exit(0);
 					break;
 				
 			}
