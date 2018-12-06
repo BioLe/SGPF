@@ -10,8 +10,6 @@ public class PresenterAceitarCandidatura {
 
 	public void obterCandidatura() {
 		viewAceitarCandidatura.obterCandidatura();
-		
-		
 	}
 
 }

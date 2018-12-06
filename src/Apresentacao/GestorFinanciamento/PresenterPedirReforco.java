@@ -12,5 +12,4 @@ public class PresenterPedirReforco {
 	public void pedirReforco() {
 		viewPedirReforco.pedirReforco();	
 	}
-
 }

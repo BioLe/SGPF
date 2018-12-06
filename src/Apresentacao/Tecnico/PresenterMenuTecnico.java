@@ -12,9 +12,10 @@ public class PresenterMenuTecnico {
 	private ViewMenuTecnico viewMenuTecnico;
 
 	//Presenters
-	private PresenterAutenticacao presenterAutenticacao;
+	//private PresenterAutenticacao presenterAutenticacao;
 	private PresenterAceitarCandidatura presenterAceitarCandidatura;
 	private PresenterSelecionarProjeto presenterSelecionarProjeto;
+	private PresenterEmitirParecerTecnico presenterEmitirParecerTecnico;
 	
 	public PresenterMenuTecnico(){
 		
@@ -27,6 +28,7 @@ public class PresenterMenuTecnico {
 		//presenterAutenticacao = new PresenterAutenticacao();
 		presenterAceitarCandidatura = new PresenterAceitarCandidatura();
 		presenterSelecionarProjeto = new PresenterSelecionarProjeto();
+		presenterEmitirParecerTecnico = new PresenterEmitirParecerTecnico();
 	}
 	
 	public void escolherOpcao() {
@@ -52,18 +54,20 @@ public class PresenterMenuTecnico {
 				case "6": //Reativar Projeto
 					presenterSelecionarProjeto.selecionarProjeto();
 					break;
-				case "7": //Mudar de Utilizador
+				case "7": // Emitir Parecer Técnico
+					presenterEmitirParecerTecnico.obterParecerTecnico();
+					break;
+				case "8": //Mudar de Utilizador
 					//TODO - BIG RECURSIVE PROBLEM
 					//presenterAutenticacao.obterAutenticacao();
 					toFinish = true;
 					break;
-				case "8": //Forçar Fecho do Projeto
+				case "9": //Forçar Fecho do Projeto
 					presenterSelecionarProjeto.selecionarProjeto();
 					break;
-				case "9": //Terminar
+				case "10": //Terminar
 					toFinish = true;
 					break;
-				
 			}
 		}
 	}

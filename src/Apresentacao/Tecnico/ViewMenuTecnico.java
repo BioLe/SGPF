@@ -13,9 +13,10 @@ public class ViewMenuTecnico extends View {
 		escrever("4 - Reenquadrar Projeto");
 		escrever("5 - Suspender Projeto");
 		escrever("6 - Reativar Projeto");
-		escrever("7 - Mudar de Utilizador");
-		escrever("8 - Forçar Fecho do Projeto");
-		escrever("9 - Terminar");
+		escrever("7 - Emitir Parecer Tecnico");
+		escrever("8 - Mudar de Utilizador");
+		escrever("9 - Forçar Fecho do Projeto");
+		escrever("10 - Terminar");
 		escrever("\nInsira a sua opção");
 		setOpcao(ler());
 		return getOpcao();
