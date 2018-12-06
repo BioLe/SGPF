@@ -9,12 +9,13 @@ public class ViewMenuGestorFinanciamento extends View {
 	public String mostrarMenu() {
 		escrever("1 - Pedir Reforço");
 		escrever("2 - Efetuar Pagamento");
-		escrever("3 - Ver Relatório");
-		escrever("4 - Suspender Projeto");
-		escrever("5 - Reativar Projeto");
-		escrever("6 - Mudar de Utilizador");
-		escrever("7 - Forçar Fecho de Projeto");
-		escrever("8 - Terminar");
+		escrever("3 - Ver Relatório de Projeto");
+		escrever("4 - Ver Relatorio de Pagamentos");
+		escrever("5 - Suspender Projeto");
+		escrever("6 - Reativar Projeto");
+		escrever("7 - Mudar de Utilizador");
+		escrever("8 - Forçar Fecho de Projeto");
+		escrever("9 - Terminar");
 		escrever("\nInsira a sua opção");
 		setOpcao(ler());
 		return getOpcao();
