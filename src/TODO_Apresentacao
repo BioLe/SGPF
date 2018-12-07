@@ -6,9 +6,10 @@ x		>escrever("2 - Efetuar Pagamento");
 		>escrever("4 - Ver Relatorio de Pagamentos");
 x		>escrever("5 - Suspender Projeto");
 x		>escrever("6 - Reativar Projeto");
-x		>escrever("7 - Mudar de Utilizador");
-		>escrever("8 - Forçar Fecho de Projeto");
-x		>escrever("9 - Terminar");
+x		>escrever("7 - Emitir Parecer Tecnico");
+x		>escrever("8 - Mudar de Utilizador");
+		>escrever("9 - Forçar Fecho de Projeto");
+x		>escrever("10 - Terminar");
 	> Técnico
 x		escrever("1 - Aceitar Candidatura");
 x		escrever("2 - Abrir Projeto");
