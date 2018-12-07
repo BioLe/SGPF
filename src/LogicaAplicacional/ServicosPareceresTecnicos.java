@@ -1,4 +1,4 @@
-package LogicaAplicacional.Model;
+package LogicaAplicacional;
 
 public class ServicosPareceresTecnicos {
 	

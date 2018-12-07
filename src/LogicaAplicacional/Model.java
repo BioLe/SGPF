@@ -1,4 +1,4 @@
-package LogicaAplicacional.Model;
+package LogicaAplicacional;
 import java.util.LinkedHashMap;
 
 public class Model {
