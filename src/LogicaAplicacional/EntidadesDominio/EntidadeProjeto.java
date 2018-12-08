@@ -1,4 +1,5 @@
 package LogicaAplicacional.EntidadesDominio;
+
 import maqest.MaquinaEstados;
 
 public class EntidadeProjeto {
