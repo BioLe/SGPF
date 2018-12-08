@@ -1,5 +1,5 @@
 package Apresentacao.GestorFinanciamento;
 
-public class PresenterVerRelatorioPagamentos {
+public class ApresentadorVerRelatorioProjeto {
 
 }

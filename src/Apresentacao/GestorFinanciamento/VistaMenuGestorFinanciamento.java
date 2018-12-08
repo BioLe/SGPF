@@ -1,8 +1,8 @@
 package Apresentacao.GestorFinanciamento;
 
-import Apresentacao.View;
+import Apresentacao.Vista;
 
-public class ViewMenuGestorFinanciamento extends View {
+public class VistaMenuGestorFinanciamento extends Vista {
 	
 	private String opcao;
 

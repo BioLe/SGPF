@@ -2,33 +2,33 @@ package Apresentacao.Tecnico;
 
 import Apresentacao.Autenticacao.ApresentadorAutenticacao;
 import Apresentacao.Autenticacao.VistaAutenticacao;
-import Apresentacao.GestaoEstadoProjeto.PresenterSelecionarProjeto;
+import Apresentacao.GestaoEstadoProjeto.ApresentadorSelecionarProjeto;
 
-public class PresenterMenuTecnico {
+public class ApresentadorMenuTecnico {
 	
 	private boolean toFinish;
 	
 	//Views
-	private ViewMenuTecnico viewMenuTecnico;
+	private VistaMenuTecnico viewMenuTecnico;
 
 	//Presenters
 	private ApresentadorAutenticacao presenterAutenticacao;
-	private PresenterAceitarCandidatura presenterAceitarCandidatura;
-	private PresenterSelecionarProjeto presenterSelecionarProjeto;
-	private PresenterEmitirParecerTecnico presenterEmitirParecerTecnico;
+	private ApresentadorAceitarCandidatura presenterAceitarCandidatura;
+	private ApresentadorSelecionarProjeto presenterSelecionarProjeto;
+	private ApresentadorEmitirParecerTecnico presenterEmitirParecerTecnico;
 	
-	public PresenterMenuTecnico(ApresentadorAutenticacao presenterAutenticacao){
+	public ApresentadorMenuTecnico(ApresentadorAutenticacao presenterAutenticacao){
 		this.presenterAutenticacao = presenterAutenticacao;
 		toFinish = false;
 		
 		//Views
-		viewMenuTecnico = new ViewMenuTecnico();
+		viewMenuTecnico = new VistaMenuTecnico();
 		
 		//Presenters
 		//presenterAutenticacao = new PresenterAutenticacao();
-		presenterAceitarCandidatura = new PresenterAceitarCandidatura();
-		presenterSelecionarProjeto = new PresenterSelecionarProjeto();
-		presenterEmitirParecerTecnico = new PresenterEmitirParecerTecnico();
+		presenterAceitarCandidatura = new ApresentadorAceitarCandidatura();
+		presenterSelecionarProjeto = new ApresentadorSelecionarProjeto();
+		presenterEmitirParecerTecnico = new ApresentadorEmitirParecerTecnico();
 	}
 	
 	public void escolherOpcao() {

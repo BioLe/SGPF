@@ -1,8 +1,8 @@
 package Apresentacao.GestorFinanciamento;
 
-import Apresentacao.View;
+import Apresentacao.Vista;
 
-public class ViewEfetuarPagamento extends View {
+public class VistaEfetuarPagamento extends Vista {
 	
 	private String numeroProjeto;
 	private String montante;

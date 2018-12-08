@@ -1,14 +1,14 @@
 package Apresentacao.ComissaoFinanciamento;
 
-import Apresentacao.GestorFinanciamento.ViewEfetuarPagamento;
+import Apresentacao.GestorFinanciamento.VistaEfetuarPagamento;
 
 public class ApresentadorEmitirDespachoAbertura {
 	
 	//View
-	private ViewEmitirDespachoAbertura viewEmitirDespachoAbertura;
+	private VistaEmitirDespachoAbertura viewEmitirDespachoAbertura;
 	
 	public ApresentadorEmitirDespachoAbertura() {
-		viewEmitirDespachoAbertura = new ViewEmitirDespachoAbertura();
+		viewEmitirDespachoAbertura = new VistaEmitirDespachoAbertura();
 	}
 
 	public void obterDespachoAbertura() {

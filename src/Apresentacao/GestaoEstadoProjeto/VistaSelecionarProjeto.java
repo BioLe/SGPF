@@ -1,8 +1,8 @@
 package Apresentacao.GestaoEstadoProjeto;
 
-import Apresentacao.View;
+import Apresentacao.Vista;
 
-public class ViewSelecionarProjeto extends View {
+public class VistaSelecionarProjeto extends Vista {
 	
 	private String numeroProjeto;
 

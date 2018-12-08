@@ -4,10 +4,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import Apresentacao.Vista;
 
-import Apresentacao.View;
-
-public class ViewAceitarCandidatura extends View {
+public class VistaAceitarCandidatura extends Vista {
 	
 	//Dados do projeto
 	private short numeroProjeto;

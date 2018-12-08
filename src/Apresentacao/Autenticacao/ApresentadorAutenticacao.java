@@ -1,9 +1,10 @@
 package Apresentacao.Autenticacao;
 
-import Apresentacao.ViewCabecalho;
-import Apresentacao.ComissaoFinanciamento.PresenterMenuComissaoFinanciamento;
-import Apresentacao.GestorFinanciamento.PresenterMenuGestorFinanciamento;
-import Apresentacao.Tecnico.PresenterMenuTecnico;
+import Apresentacao.VistaCabecalho;
+import Apresentacao.Autenticacao.VistaAutenticacao;
+import Apresentacao.ComissaoFinanciamento.ApresentadorMenuComissaoFinanciamento;
+import Apresentacao.GestorFinanciamento.ApresentadorMenuGestorFinanciamento;
+import Apresentacao.Tecnico.ApresentadorMenuTecnico;
 
 public class ApresentadorAutenticacao {
 	
@@ -11,12 +12,12 @@ public class ApresentadorAutenticacao {
 	
 	//Views
 	private VistaAutenticacao viewAutenticacao;
-	private ViewCabecalho viewCabecalho;
+	private VistaCabecalho viewCabecalho;
 	
 	//Presenters
-	private PresenterMenuTecnico presenterMenuTecnico;
-	private PresenterMenuGestorFinanciamento presenterMenuGestorFinanciamento;
-	private PresenterMenuComissaoFinanciamento presenterMenuComissaoFinanciamento;
+	private ApresentadorMenuTecnico presenterMenuTecnico;
+	private ApresentadorMenuGestorFinanciamento presenterMenuGestorFinanciamento;
+	private ApresentadorMenuComissaoFinanciamento presenterMenuComissaoFinanciamento;
 	
 	public ApresentadorAutenticacao() {
 		
@@ -24,12 +25,12 @@ public class ApresentadorAutenticacao {
 
 		//Views
 		this.viewAutenticacao = new VistaAutenticacao();
-		viewCabecalho = new ViewCabecalho();
+		viewCabecalho = new VistaCabecalho();
 		
 		//Presenters sucessores
-		presenterMenuTecnico = new PresenterMenuTecnico(this);
-		presenterMenuGestorFinanciamento = new PresenterMenuGestorFinanciamento(this);
-		presenterMenuComissaoFinanciamento = new PresenterMenuComissaoFinanciamento(this);
+		presenterMenuTecnico = new ApresentadorMenuTecnico(this);
+		presenterMenuGestorFinanciamento = new ApresentadorMenuGestorFinanciamento(this);
+		presenterMenuComissaoFinanciamento = new ApresentadorMenuComissaoFinanciamento(this);
 		
 		viewAutenticacao = new VistaAutenticacao();	
 		obterAutenticacao();

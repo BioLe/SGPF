@@ -1,8 +1,8 @@
 package Apresentacao.Tecnico;
 
-import Apresentacao.View;
+import Apresentacao.Vista;
 
-public class ViewMenuTecnico extends View {
+public class VistaMenuTecnico extends Vista {
 	
 	private String opcao;
 

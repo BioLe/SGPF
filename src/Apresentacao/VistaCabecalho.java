@@ -1,6 +1,6 @@
 package Apresentacao;
 
-public class ViewCabecalho extends View{
+public class VistaCabecalho extends Vista{
 	
 	private String nome;
 	private String cargo;

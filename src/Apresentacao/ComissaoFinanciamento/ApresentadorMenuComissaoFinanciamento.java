@@ -1,44 +1,44 @@
 package Apresentacao.ComissaoFinanciamento;
 
 import Apresentacao.Autenticacao.ApresentadorAutenticacao;
-import Apresentacao.GestaoEstadoProjeto.PresenterSelecionarProjeto;
-import Apresentacao.GestorFinanciamento.PresenterEfetuarPagamento;
-import Apresentacao.GestorFinanciamento.PresenterPedirReforco;
-import Apresentacao.GestorFinanciamento.PresenterVerRelatorioPagamentos;
-import Apresentacao.GestorFinanciamento.PresenterVerRelatorioProjeto;
-import Apresentacao.GestorFinanciamento.ViewMenuGestorFinanciamento;
+import Apresentacao.GestaoEstadoProjeto.ApresentadorSelecionarProjeto;
+import Apresentacao.GestorFinanciamento.ApresentadorEfetuarPagamento;
+import Apresentacao.GestorFinanciamento.ApresentadorPedirReforco;
+import Apresentacao.GestorFinanciamento.ApresentadorVerRelatorioPagamentos;
+import Apresentacao.GestorFinanciamento.ApresentadorVerRelatorioProjeto;
+import Apresentacao.GestorFinanciamento.VistaMenuGestorFinanciamento;
 
-public class PresenterMenuComissaoFinanciamento {
+public class ApresentadorMenuComissaoFinanciamento {
 
 private boolean toFinish;
 	
 	//Views
-	private ViewMenuComissaoFinanciamento viewMenuComissaoFinanciamento;
+	private VistaMenuComissaoFinanciamento viewMenuComissaoFinanciamento;
 
 	//Presenters
 	private ApresentadorAutenticacao presenterAutenticacao;
 	private ApresentadorEmitirDespachoAbertura presenterEmitirDespachoAbertura;
 	private ApresentadorEmitirDespachoFinanciamento presenterEmitirDespachoFinanciamento;
-	private PresenterEmitirDespachoReforco presenterEmitirDespachoReforco;
-	private PresenterVerRelatorioProjeto presenterVerRelatorioProjeto;
-	private PresenterVerRelatorioPagamentos presenterVerRelatorioPagamentos;
-	private PresenterSelecionarProjeto presenterSelecionarProjeto;
+	private ApresentadorEmitirDespachoReforco presenterEmitirDespachoReforco;
+	private ApresentadorVerRelatorioProjeto presenterVerRelatorioProjeto;
+	private ApresentadorVerRelatorioPagamentos presenterVerRelatorioPagamentos;
+	private ApresentadorSelecionarProjeto presenterSelecionarProjeto;
 	
-	public PresenterMenuComissaoFinanciamento(ApresentadorAutenticacao presenterAutenticacao) {
+	public ApresentadorMenuComissaoFinanciamento(ApresentadorAutenticacao presenterAutenticacao) {
 		this.presenterAutenticacao = presenterAutenticacao;
 		this.toFinish = false;
 		
 		//Views
-		viewMenuComissaoFinanciamento = new ViewMenuComissaoFinanciamento();
+		viewMenuComissaoFinanciamento = new VistaMenuComissaoFinanciamento();
 		
 		//Presenters
 		//presenterAutenticacao = new PresenterAutenticacao();
 		presenterEmitirDespachoAbertura = new ApresentadorEmitirDespachoAbertura();
 		presenterEmitirDespachoFinanciamento = new ApresentadorEmitirDespachoFinanciamento();
-		presenterEmitirDespachoReforco = new PresenterEmitirDespachoReforco();
-		presenterVerRelatorioPagamentos = new PresenterVerRelatorioPagamentos();
-		presenterVerRelatorioProjeto = new PresenterVerRelatorioProjeto();
-		presenterSelecionarProjeto = new PresenterSelecionarProjeto();
+		presenterEmitirDespachoReforco = new ApresentadorEmitirDespachoReforco();
+		presenterVerRelatorioPagamentos = new ApresentadorVerRelatorioPagamentos();
+		presenterVerRelatorioProjeto = new ApresentadorVerRelatorioProjeto();
+		presenterSelecionarProjeto = new ApresentadorSelecionarProjeto();
 	}
 	
 	public void escolherOpcao() {

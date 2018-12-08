@@ -1,8 +1,8 @@
 package Apresentacao.GestorFinanciamento;
 
-import Apresentacao.View;
+import Apresentacao.Vista;
 
-public class ViewPedirReforco extends View {
+public class VistaPedirReforco extends Vista {
 	
 	private String numeroProjeto;
 	private String reforco;

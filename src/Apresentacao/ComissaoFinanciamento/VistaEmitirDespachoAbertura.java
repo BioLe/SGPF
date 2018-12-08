@@ -1,8 +1,8 @@
 package Apresentacao.ComissaoFinanciamento;
 
-import Apresentacao.View;
+import Apresentacao.Vista;
 
-public class ViewEmitirDespachoAbertura extends View {
+public class VistaEmitirDespachoAbertura extends Vista {
 
 	private String numeroProjeto;
 	private String gestorFinanciamento;

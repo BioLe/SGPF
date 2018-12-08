@@ -1,10 +1,10 @@
 package Apresentacao;
 
 import Apresentacao.Autenticacao.*;
-import Apresentacao.ComissaoFinanciamento.PresenterMenuComissaoFinanciamento;
-import Apresentacao.GestorFinanciamento.PresenterMenuGestorFinanciamento;
-import Apresentacao.Tecnico.PresenterMenuTecnico;
-import Apresentacao.Tecnico.ViewMenuTecnico;
+import Apresentacao.ComissaoFinanciamento.ApresentadorMenuComissaoFinanciamento;
+import Apresentacao.GestorFinanciamento.ApresentadorMenuGestorFinanciamento;
+import Apresentacao.Tecnico.ApresentadorMenuTecnico;
+import Apresentacao.Tecnico.VistaMenuTecnico;
 
 public class GestorApresentacao {
 

@@ -1,37 +1,37 @@
 package Apresentacao.GestorFinanciamento;
 
 import Apresentacao.Autenticacao.ApresentadorAutenticacao;
-import Apresentacao.GestaoEstadoProjeto.PresenterSelecionarProjeto;
+import Apresentacao.GestaoEstadoProjeto.ApresentadorSelecionarProjeto;
 
-public class PresenterMenuGestorFinanciamento {
+public class ApresentadorMenuGestorFinanciamento {
 		
 	private boolean toFinish;
 	
 	//Views
-	private ViewMenuGestorFinanciamento viewMenuGestorFinanciamento;
+	private VistaMenuGestorFinanciamento viewMenuGestorFinanciamento;
 
 	//Presenters
 	private ApresentadorAutenticacao presenterAutenticacao;
-	private PresenterPedirReforco presenterPedirReforco;
-	private PresenterEfetuarPagamento presenterEfeuarPagamento;
-	private PresenterVerRelatorioProjeto presenterVerRelatorioProjeto;
-	private PresenterVerRelatorioPagamentos presenterVerRelatorioPagamentos;
-	private PresenterSelecionarProjeto presenterSelecionarProjeto;
+	private ApresentadorPedirReforco presenterPedirReforco;
+	private ApresentadorEfetuarPagamento presenterEfeuarPagamento;
+	private ApresentadorVerRelatorioProjeto presenterVerRelatorioProjeto;
+	private ApresentadorVerRelatorioPagamentos presenterVerRelatorioPagamentos;
+	private ApresentadorSelecionarProjeto presenterSelecionarProjeto;
 	
-	public PresenterMenuGestorFinanciamento(ApresentadorAutenticacao presenterAutenticacao) {
+	public ApresentadorMenuGestorFinanciamento(ApresentadorAutenticacao presenterAutenticacao) {
 		this.presenterAutenticacao = presenterAutenticacao;
 		this.toFinish = false;
 		
 		//Views
-		viewMenuGestorFinanciamento = new ViewMenuGestorFinanciamento();
+		viewMenuGestorFinanciamento = new VistaMenuGestorFinanciamento();
 		
 		//Presenters
 		//presenterAutenticacao = new PresenterAutenticacao();
-		presenterSelecionarProjeto = new PresenterSelecionarProjeto();
-		presenterPedirReforco = new PresenterPedirReforco();
-		presenterEfeuarPagamento = new PresenterEfetuarPagamento();
-		presenterVerRelatorioPagamentos = new PresenterVerRelatorioPagamentos();
-		presenterVerRelatorioProjeto = new PresenterVerRelatorioProjeto();
+		presenterSelecionarProjeto = new ApresentadorSelecionarProjeto();
+		presenterPedirReforco = new ApresentadorPedirReforco();
+		presenterEfeuarPagamento = new ApresentadorEfetuarPagamento();
+		presenterVerRelatorioPagamentos = new ApresentadorVerRelatorioPagamentos();
+		presenterVerRelatorioProjeto = new ApresentadorVerRelatorioProjeto();
 	}
 	
 	public void escolherOpcao() {

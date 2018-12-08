@@ -1,8 +1,8 @@
 package Apresentacao.Tecnico;
 
-import Apresentacao.View;
+import Apresentacao.Vista;
 
-public class ViewEmitirParecerTecnico extends View {
+public class VistaEmitirParecerTecnico extends Vista {
 	
 	private String decisao;
 	private String descricao;
