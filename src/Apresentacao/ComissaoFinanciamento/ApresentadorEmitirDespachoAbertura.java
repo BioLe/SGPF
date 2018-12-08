@@ -2,12 +2,12 @@ package Apresentacao.ComissaoFinanciamento;
 
 import Apresentacao.GestorFinanciamento.ViewEfetuarPagamento;
 
-public class PresenterEmitirDespachoAbertura {
+public class ApresentadorEmitirDespachoAbertura {
 	
 	//View
 	private ViewEmitirDespachoAbertura viewEmitirDespachoAbertura;
 	
-	public PresenterEmitirDespachoAbertura() {
+	public ApresentadorEmitirDespachoAbertura() {
 		viewEmitirDespachoAbertura = new ViewEmitirDespachoAbertura();
 	}
 

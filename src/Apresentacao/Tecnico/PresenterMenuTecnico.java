@@ -1,7 +1,7 @@
 package Apresentacao.Tecnico;
 
-import Apresentacao.Autenticacao.PresenterAutenticacao;
-import Apresentacao.Autenticacao.ViewAutenticacao;
+import Apresentacao.Autenticacao.ApresentadorAutenticacao;
+import Apresentacao.Autenticacao.VistaAutenticacao;
 import Apresentacao.GestaoEstadoProjeto.PresenterSelecionarProjeto;
 
 public class PresenterMenuTecnico {
@@ -12,12 +12,12 @@ public class PresenterMenuTecnico {
 	private ViewMenuTecnico viewMenuTecnico;
 
 	//Presenters
-	private PresenterAutenticacao presenterAutenticacao;
+	private ApresentadorAutenticacao presenterAutenticacao;
 	private PresenterAceitarCandidatura presenterAceitarCandidatura;
 	private PresenterSelecionarProjeto presenterSelecionarProjeto;
 	private PresenterEmitirParecerTecnico presenterEmitirParecerTecnico;
 	
-	public PresenterMenuTecnico(PresenterAutenticacao presenterAutenticacao){
+	public PresenterMenuTecnico(ApresentadorAutenticacao presenterAutenticacao){
 		this.presenterAutenticacao = presenterAutenticacao;
 		toFinish = false;
 		

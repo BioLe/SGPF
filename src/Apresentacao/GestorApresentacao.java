@@ -9,9 +9,9 @@ import Apresentacao.Tecnico.ViewMenuTecnico;
 public class GestorApresentacao {
 
 	//Presenters
-	private PresenterAutenticacao presenterAutenticacao;
+	private ApresentadorAutenticacao presenterAutenticacao;
 	
 	public GestorApresentacao() {
-		presenterAutenticacao = new PresenterAutenticacao();	
+		presenterAutenticacao = new ApresentadorAutenticacao();	
 	}
 }

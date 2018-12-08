@@ -5,12 +5,12 @@ import Apresentacao.ComissaoFinanciamento.PresenterMenuComissaoFinanciamento;
 import Apresentacao.GestorFinanciamento.PresenterMenuGestorFinanciamento;
 import Apresentacao.Tecnico.PresenterMenuTecnico;
 
-public class PresenterAutenticacao {
+public class ApresentadorAutenticacao {
 	
 	private boolean toFinish;
 	
 	//Views
-	private ViewAutenticacao viewAutenticacao;
+	private VistaAutenticacao viewAutenticacao;
 	private ViewCabecalho viewCabecalho;
 	
 	//Presenters
@@ -18,12 +18,12 @@ public class PresenterAutenticacao {
 	private PresenterMenuGestorFinanciamento presenterMenuGestorFinanciamento;
 	private PresenterMenuComissaoFinanciamento presenterMenuComissaoFinanciamento;
 	
-	public PresenterAutenticacao() {
+	public ApresentadorAutenticacao() {
 		
 		this.toFinish = false;
 
 		//Views
-		this.viewAutenticacao = new ViewAutenticacao();
+		this.viewAutenticacao = new VistaAutenticacao();
 		viewCabecalho = new ViewCabecalho();
 		
 		//Presenters sucessores
@@ -31,7 +31,7 @@ public class PresenterAutenticacao {
 		presenterMenuGestorFinanciamento = new PresenterMenuGestorFinanciamento(this);
 		presenterMenuComissaoFinanciamento = new PresenterMenuComissaoFinanciamento(this);
 		
-		viewAutenticacao = new ViewAutenticacao();	
+		viewAutenticacao = new VistaAutenticacao();	
 		obterAutenticacao();
 		
 	}

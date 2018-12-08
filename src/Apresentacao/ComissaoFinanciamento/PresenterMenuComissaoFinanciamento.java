@@ -1,6 +1,6 @@
 package Apresentacao.ComissaoFinanciamento;
 
-import Apresentacao.Autenticacao.PresenterAutenticacao;
+import Apresentacao.Autenticacao.ApresentadorAutenticacao;
 import Apresentacao.GestaoEstadoProjeto.PresenterSelecionarProjeto;
 import Apresentacao.GestorFinanciamento.PresenterEfetuarPagamento;
 import Apresentacao.GestorFinanciamento.PresenterPedirReforco;
@@ -16,15 +16,15 @@ private boolean toFinish;
 	private ViewMenuComissaoFinanciamento viewMenuComissaoFinanciamento;
 
 	//Presenters
-	private PresenterAutenticacao presenterAutenticacao;
-	private PresenterEmitirDespachoAbertura presenterEmitirDespachoAbertura;
-	private PresenterEmitirDespachoFinanciamento presenterEmitirDespachoFinanciamento;
+	private ApresentadorAutenticacao presenterAutenticacao;
+	private ApresentadorEmitirDespachoAbertura presenterEmitirDespachoAbertura;
+	private ApresentadorEmitirDespachoFinanciamento presenterEmitirDespachoFinanciamento;
 	private PresenterEmitirDespachoReforco presenterEmitirDespachoReforco;
 	private PresenterVerRelatorioProjeto presenterVerRelatorioProjeto;
 	private PresenterVerRelatorioPagamentos presenterVerRelatorioPagamentos;
 	private PresenterSelecionarProjeto presenterSelecionarProjeto;
 	
-	public PresenterMenuComissaoFinanciamento(PresenterAutenticacao presenterAutenticacao) {
+	public PresenterMenuComissaoFinanciamento(ApresentadorAutenticacao presenterAutenticacao) {
 		this.presenterAutenticacao = presenterAutenticacao;
 		this.toFinish = false;
 		
@@ -33,8 +33,8 @@ private boolean toFinish;
 		
 		//Presenters
 		//presenterAutenticacao = new PresenterAutenticacao();
-		presenterEmitirDespachoAbertura = new PresenterEmitirDespachoAbertura();
-		presenterEmitirDespachoFinanciamento = new PresenterEmitirDespachoFinanciamento();
+		presenterEmitirDespachoAbertura = new ApresentadorEmitirDespachoAbertura();
+		presenterEmitirDespachoFinanciamento = new ApresentadorEmitirDespachoFinanciamento();
 		presenterEmitirDespachoReforco = new PresenterEmitirDespachoReforco();
 		presenterVerRelatorioPagamentos = new PresenterVerRelatorioPagamentos();
 		presenterVerRelatorioProjeto = new PresenterVerRelatorioProjeto();

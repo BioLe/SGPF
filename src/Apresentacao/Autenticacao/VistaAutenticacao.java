@@ -2,7 +2,7 @@ package Apresentacao.Autenticacao;
 
 import Apresentacao.View;
 
-public class ViewAutenticacao extends View {
+public class VistaAutenticacao extends View {
 
 	private String nome;
 	private String cargo;

@@ -1,6 +1,6 @@
 package Apresentacao.GestorFinanciamento;
 
-import Apresentacao.Autenticacao.PresenterAutenticacao;
+import Apresentacao.Autenticacao.ApresentadorAutenticacao;
 import Apresentacao.GestaoEstadoProjeto.PresenterSelecionarProjeto;
 
 public class PresenterMenuGestorFinanciamento {
@@ -11,14 +11,14 @@ public class PresenterMenuGestorFinanciamento {
 	private ViewMenuGestorFinanciamento viewMenuGestorFinanciamento;
 
 	//Presenters
-	private PresenterAutenticacao presenterAutenticacao;
+	private ApresentadorAutenticacao presenterAutenticacao;
 	private PresenterPedirReforco presenterPedirReforco;
 	private PresenterEfetuarPagamento presenterEfeuarPagamento;
 	private PresenterVerRelatorioProjeto presenterVerRelatorioProjeto;
 	private PresenterVerRelatorioPagamentos presenterVerRelatorioPagamentos;
 	private PresenterSelecionarProjeto presenterSelecionarProjeto;
 	
-	public PresenterMenuGestorFinanciamento(PresenterAutenticacao presenterAutenticacao) {
+	public PresenterMenuGestorFinanciamento(ApresentadorAutenticacao presenterAutenticacao) {
 		this.presenterAutenticacao = presenterAutenticacao;
 		this.toFinish = false;
 		

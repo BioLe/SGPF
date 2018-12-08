@@ -6,6 +6,5 @@ public class GestorProjetosFinanciamento {
 		GestorApresentacao gestorApresentacao = new GestorApresentacao();
 		//GestorServiços
 		//GestorAcessoDados
-
 	}
 }

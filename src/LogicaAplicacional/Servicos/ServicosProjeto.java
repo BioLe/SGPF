@@ -1,4 +1,4 @@
-package LogicaAplicacional;
+package LogicaAplicacional.Servicos;
 
 public class ServicosProjeto {
 	
