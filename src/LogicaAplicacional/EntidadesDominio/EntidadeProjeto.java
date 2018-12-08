@@ -9,6 +9,7 @@ public class EntidadeProjeto {
 	
 	public EntidadeProjeto() {
 		this.maqEstados = new MaquinaEstados();
+		System.out.println("asd");
 	}
 
 }
